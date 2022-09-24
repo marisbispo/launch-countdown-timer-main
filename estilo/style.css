@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-image: url(../images/bg-stars.svg), linear-gradient(183deg,hsl(234, 17%, 12%) 0%, hsl(235, 16%, 14%) 100%);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.principal{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.principal h1{
+  color:white;
+  text-transform: uppercase;
+}
+
+.tempo{
+  display:flex;
+  gap: 20px;
+}
+
+.temporizador{
+  width:150px;
+  height:125px;
+  background: hsl(236, 21%, 26%);
+  margin-bottom: 20px;
+  border-radius:8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:4rem;
+  color: hsl(345, 95%, 68%);
+}
+
+
+span{
+color:white;
+text-transform:uppercase ;
+}
+
+.rodape{
+  position:fixed;
+  bottom: 0;
+  width:100%;
+  height:200px;
+  /*background:red;*/
+  background: url(../images/pattern-hills.svg);
+}
+
+.social{
+  display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
