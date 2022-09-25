@@ -28,7 +28,7 @@ body{
 .temporizador{
   width:150px;
   height:125px;
-  background: hsl(236, 21%, 26%);
+  background-image: linear-gradient(to bottom, #2c2c44, #2c2c44, #2c2c44, #2c2c44, #2c2c44, #2d2d45, #2d2d46, #2e2e47, #2f3049, #31314b, #32334d, #34354f);
   margin-bottom: 20px;
   border-radius:8px;
   display: flex;
@@ -36,12 +36,49 @@ body{
   align-items: center;
   font-size:4rem;
   color: hsl(345, 95%, 68%);
+  position:relative;
+  box-shadow: 0px 10px 0px hsl(234, 17%, 12%);
+}
+
+.temporizador::before,
+.temporizador::after{
+  content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: hsl(234, 17%, 12%);
+    
+}
+
+.temporizador::before{
+
+  clip-path: circle(50% at 0%);
+  left: 0;
+}
+
+.temporizador::after{
+
+  clip-path: circle(50% at 100% 50%);
+  right: 0;
+}
+
+.linha{
+  width: 100%;
+  height: 1px;
+  background:  hsl(234, 17%, 12%);
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  right:0;
+  opacity: 0.2;
 }
 
 
 span{
-color:white;
-text-transform:uppercase ;
+color:hsl(237, 18%, 59%);
+text-transform:uppercase;
+letter-spacing: 4px;
+font-size: 0.9rem;
 }
 
 .rodape{
@@ -59,4 +96,9 @@ text-transform:uppercase ;
     justify-content: center;
     align-items: center;
     height: 200px;
+}
+
+.social img:hover{
+  cursor:pointer;
+  /*color:hsl(345, 95%, 68%);*/
 }
