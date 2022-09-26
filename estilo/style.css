@@ -98,7 +98,16 @@ font-size: 0.9rem;
     height: 200px;
 }
 
-.social img:hover{
+/* .social img path{
   cursor:pointer;
-  /*color:hsl(345, 95%, 68%);*/
+  color:hsl(345, 95%, 68%);
+  fill:hsl(345, 95%, 68%);
+} */
+
+svg {
+  fill: #8385A9;
+}
+
+svg:hover{
+  fill:hsl(345, 95%, 68%);
 }
