@@ -74,7 +74,7 @@ body{
 }
 
 
-span{
+.legenda{
 color:hsl(237, 18%, 59%);
 text-transform:uppercase;
 letter-spacing: 4px;
