@@ -98,16 +98,33 @@ font-size: 0.9rem;
     height: 200px;
 }
 
-/* .social img path{
-  cursor:pointer;
-  color:hsl(345, 95%, 68%);
-  fill:hsl(345, 95%, 68%);
-} */
-
 svg {
   fill: #8385A9;
 }
 
 svg:hover{
   fill:hsl(345, 95%, 68%);
+}
+
+@media (max-width: 400px) {
+
+  .principal h1 {
+    font-size: 1.9rem;
+    padding: 0 20px;
+}
+
+  .legenda {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+
+  .temporizador {
+    width: 70px;
+    height: 65px;
+    font-size: 2.3rem;
+  }
+
+  .tempo {
+    gap: 15px;
+}
 }
